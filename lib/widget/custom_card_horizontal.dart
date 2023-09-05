@@ -30,6 +30,7 @@ class CustomCardHorizontal extends StatelessWidget {
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
+                    fontStyle: FontStyle.italic
                   ),
                 ),
                 subtitle: Text(

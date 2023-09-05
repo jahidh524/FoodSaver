@@ -90,8 +90,8 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             ),
           ),
           CustomCardHorizontal(
-              title: 'title',
-              subtitle: 'subtitle',
+              title: 'Cloud Kitchen',
+              subtitle: 'Easy and Higenic Service',
               imagePath: homeDataList[1].imagePath),
           const SizedBox(
             height: 10,
@@ -150,6 +150,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             textAlign: TextAlign.left,
           ),
+          const SizedBox(height: 5),
           SizedBox(
             height: height * 0.32,
             width: width,
@@ -158,7 +159,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
                 crossAxisSpacing: 0.0,
-                mainAxisSpacing: 0.0,
+                mainAxisSpacing: 8.0,
               ),
               itemCount: foodCategory.length,
               itemBuilder: (BuildContext context, int index) {
@@ -174,7 +175,7 @@ class _MyHomePageState extends ConsumerState<MyHomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
-        // tooltip: 'Increment',
+        backgroundColor: const Color(0xffFFA477),
         child: const Icon(Icons.add),
       ),
     );

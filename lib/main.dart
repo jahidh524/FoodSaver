@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 148, 95, 240)),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xffFFA477),),
         useMaterial3: true,
       ),
       // home: const MyHomePage(title: 'Food Saver'),

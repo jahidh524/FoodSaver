@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:food_saver/feature/home/presentation/screen/home_page.dart';
+import 'package:food_saver/feature/restaurant/presentation/screen/restaurant_page.dart';
 
 class BottomTabBar extends StatefulWidget {
   final int index;
   const BottomTabBar(this.index, {Key? key}) : super(key: key);
   @override
+  // ignore: no_logic_in_create_state
   BottomTabBarState createState() => BottomTabBarState(index);
 }
 
@@ -19,8 +21,8 @@ class BottomTabBarState extends State<BottomTabBar> {
     switch (_selectedIndex) {
       case 0:
         return const MyHomePage(title: 'Food Saver');
-      // case 1:
-      //   return const CommunityListScreen();
+      case 1:
+        return const RestaurantPage();
       // case 2:
       //   return const CreateCommunityScreen();
       // case 3:
@@ -61,8 +63,8 @@ class BottomTabBarState extends State<BottomTabBar> {
                     type: BottomNavigationBarType.fixed,
                     currentIndex: _selectedIndex,
                     backgroundColor: const Color(0xffFFA477),
-                    selectedItemColor: const Color(0xffFFFAB5),
-                    unselectedItemColor: Colors.black,
+                    selectedItemColor: Colors.black,
+                    unselectedItemColor: Colors.white,
                     onTap: (value) {
                       //print("check value$value");
                       setState(() {
